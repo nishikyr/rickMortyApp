@@ -1,59 +1,56 @@
-# RickMortyApp
+# 🛸 Rick & Morty App - Angular & Node.js 🚀
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.7.
+Un proyecto full-stack desarrollado con **Angular 19 (Frontend)** y **Node.js + Express + MongoDB (Backend)** que permite a los usuarios registrarse, autenticarse, ver personajes de la API de Rick and Morty, agregar favoritos y gestionar su perfil con subida de avatar.  
 
-## Development server
+---
 
-To start a local development server, run:
+## 📸 **Imágenes del Proyecto**  
+🔹 **Pantalla Principal (Listado de Personajes)**  
+![Personajes](./images/personajes.png)
 
-```bash
-ng serve
-```
+🔹 **Login y Registro de Usuario**  
+![Login](./images/login.png)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+🔹 **Vista de Favoritos**  
+![Favoritos](./images/favoritos.png)
 
-## Code scaffolding
+🔹 **Perfil del Usuario (Subida de Avatar)**  
+![Perfil](./images/perfil.png)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
+## 🛠 **Tecnologías Utilizadas**
+### 🔹 **Frontend (Angular 19)**
+- Angular 19 con **Signals** (sin `subscribe()`)
+- Bootstrap 5 para diseño responsivo
+- Angular Router para navegación
+- Consumo de API con **HttpClient**
+- LocalStorage para persistencia del token
+- Guardias de autenticación con `CanActivate`
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### 🔹 **Backend (Node.js + Express)**
+- Node.js con Express.js
+- MongoDB + Mongoose para persistencia
+- JSON Web Token (**JWT**) para autenticación
+- Multer para subida de imágenes (Avatares)
+- BCrypt para encriptación de contraseñas
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## 🚀 **Características Principales**
+✅ **Autenticación con JWT:** Registro, Login y Persistencia de Sesión.  
+✅ **Consumo de API externa:** Se obtienen personajes de la API de Rick & Morty.  
+✅ **Favoritos:** Los usuarios pueden marcar personajes como favoritos y ver su lista.  
+✅ **Perfil del usuario:** Edición de nombre y subida de avatar con imágenes reales.  
+✅ **Protección de Rutas:** Solo usuarios autenticados pueden acceder a favoritos y perfil.  
+✅ **Uso de `Signals` en Angular:** Evitamos el uso de `subscribe()` para mayor eficiencia.  
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+## 🎯 **Cómo Instalar y Ejecutar el Proyecto**
+📌 **Sigue estos pasos para correr la app en tu máquina.**  
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### 🛠 **1️⃣ Clonar el Repositorio**
+```sh
+git clone https://github.com/TU-USUARIO/rickmorty-app.git
+cd rickmorty-app
