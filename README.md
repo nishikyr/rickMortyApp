@@ -6,16 +6,16 @@ Un proyecto full-stack desarrollado con **Angular 19 (Frontend)** y **Node.js + 
 
 ## 📸 **Imágenes del Proyecto**  
 🔹 **Pantalla Principal (Listado de Personajes)**  
-![Personajes](./images/personajes.png)
+![Personajes](https://github.com/nishikyr/rickMortyApp/blob/main/images/main.png)
 
 🔹 **Login y Registro de Usuario**  
-![Login](./images/login.png)
+![Login](https://github.com/nishikyr/rickMortyApp/blob/main/images/login.png)
 
 🔹 **Vista de Favoritos**  
-![Favoritos](./images/favoritos.png)
+![Favoritos](https://github.com/nishikyr/rickMortyApp/blob/main/images/favorites.png)
 
 🔹 **Perfil del Usuario (Subida de Avatar)**  
-![Perfil](./images/perfil.png)
+![Perfil](https://github.com/nishikyr/rickMortyApp/blob/main/images/editProfile.png)
 
 ---
 
