@@ -21,7 +21,7 @@ Un proyecto full-stack desarrollado con **Angular 19 (Frontend)** y **Node.js + 
 
 ## 🛠 **Tecnologías Utilizadas**
 ### 🔹 **Frontend (Angular 19)**
-- Angular 19 con **Signals** (sin `subscribe()`)
+- Angular 19 con **Signals**
 - Bootstrap 5 para diseño responsivo
 - Angular Router para navegación
 - Consumo de API con **HttpClient**
