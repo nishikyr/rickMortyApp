@@ -1,0 +1,24 @@
+<div class="container mt-4">
+  <h2>⭐ Mis Favoritos ⭐</h2>
+
+  <div *ngIf="user()?.favorites?.length === 0">
+    <p class="text-center text-muted">No tienes personajes en favoritos.</p>
+  </div>
+
+  <div class="row">
+    <div *ngFor="let character of user()?.favorites" class="col-md-3 mb-4">
+      <div class="card">
+        <img [src]="character.image" class="card-img-top" [alt]="character.name">
+        <div class="card-body">
+          <h5 class="card-title">{{ character.name }}</h5>
+          <p class="card-text">{{ character.status }} - {{ character.species }}</p>
+
+          <!-- Botón para eliminar -->
+          <button class="btn btn-danger mt-2" (click)="removeFromFavorites(character.characterId)">
+            ❌ Quitar de Favoritos
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/">Rick and Morty App</a>
+
+    <div *ngIf="user(); else loginTemplate" class="d-flex align-items-center">
+      <img [src]="user()?.avatar || 'https://via.placeholder.com/40'" class="rounded-circle" width="40" height="40" alt="Avatar">
+      <span class="text-white mx-2">{{ user()?.name }}</span>
+      <!-- Botón de favoritos -->
+      <a routerLink="/favorites" class="btn btn-warning btn-sm mx-2">⭐ Mis Favoritos</a>
+
+      <!-- Botón de editar Perfil -->
+      <a routerLink="/profile" class="btn btn-secondary btn-sm mx-2">Editar Perfil</a>
+      
+      <!-- Botón de salir -->
+      <button class="btn btn-danger btn-sm" (click)="logout()">Salir</button>
+    </div>
+
+    <ng-template #loginTemplate>
+      <button class="btn btn-primary btn-sm" (click)="goToLogin()">Iniciar Sesión</button>
+    </ng-template>
+  </div>
+</nav>

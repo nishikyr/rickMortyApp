@@ -1,0 +1,10 @@
+<div class="container">
+  <h2>Registro</h2>
+  <form (submit)="register()">
+    <input type="text" [(ngModel)]="user.name" placeholder="Nombre" class="form-control mb-2" required>
+    <input type="email" [(ngModel)]="user.email" placeholder="Email" class="form-control mb-2" required>
+    <input type="password" [(ngModel)]="user.password" placeholder="Contraseña" class="form-control mb-2" required>
+    <input type="text" [(ngModel)]="user.avatar" placeholder="URL de Avatar (Opcional)" class="form-control mb-2">
+    <button type="submit" class="btn btn-primary">Registrarse</button>
+  </form>
+</div>

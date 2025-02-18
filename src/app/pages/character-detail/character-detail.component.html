@@ -1,0 +1,11 @@
+<div *ngIf="character" class="card text-center">
+  <img [src]="character.image" class="card-img-top mx-auto mt-4" style="width: 200px;">
+  <div class="card-body">
+    <h2>{{ character.name }}</h2>
+    <p><strong>Status:</strong> {{ character.status }}</p>
+    <p><strong>Species:</strong> {{ character.species }}</p>
+    <p><strong>Gender:</strong> {{ character.gender }}</p>
+    <p><strong>Origin:</strong> {{ character.origin?.name }}</p>
+    <a routerLink="/" class="btn btn-secondary">Volver</a>
+  </div>
+</div>

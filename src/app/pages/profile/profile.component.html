@@ -1,0 +1,22 @@
+<div class="container mt-4">
+  <h2>Editar Perfil</h2>
+
+  <div class="mb-3 text-center">
+    <img [src]="user()?.avatar || 'https://via.placeholder.com/150'" class="rounded-circle" width="150" height="150" alt="Avatar">
+  </div>
+
+  <form (submit)="updateProfile()">
+    <div class="mb-3">
+      <label class="form-label">Nombre:</label>
+      <input type="text" [(ngModel)]="user().name" class="form-control">
+    </div>
+
+    <!-- Input para subir imagen -->
+    <div class="mb-3">
+      <label class="form-label">Avatar:</label>
+      <input type="file" (change)="onFileSelected($event)" class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+  </form>
+</div>
