@@ -15,7 +15,7 @@ import { computed } from '@angular/core';
 export class HomeComponent implements OnInit {
   characters: any[] = [];
   currentPage = 1;
-  totalPages = 42;
+  totalPages = 40;
   searchQuery = '';
 
   user = computed(() => this.authService.userSignal());
@@ -63,7 +63,7 @@ export class HomeComponent implements OnInit {
 
   // 👉 Métodos para manejar favoritos
   addToFavorites(character: any) {
-    console.log("!!!! OYE MAJOOOOO AGREGANDOOOOOO: ", character);
+    console.log("!!!! AGREGANDOOOOOO: ", character);
 
     this.authService.addToFavorites({
       characterId: character.id,
@@ -71,6 +71,7 @@ export class HomeComponent implements OnInit {
       image: character.image,
       status: character.status,
       species: character.species
+      
     });
   }
 

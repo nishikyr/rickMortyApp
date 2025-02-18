@@ -17,12 +17,12 @@ export class LoginComponent {
   constructor(private authService: AuthService, private router: Router) {}
 
   login() {
-    console.log("Datos del formulario antes de enviar:", this.credentials);
+    console.log(" **** Datos del formulario antes de enviar:", this.credentials);
 
     this.authService.login(this.credentials).pipe(
       tap(response => {
         this.authService.saveToken(response.token);
-        console.log("✅ Login exitoso:", response);
+        console.log(" El Login ha sido exitoso!!!!!:", response);
         this.router.navigate(['/']);
       })
     ).subscribe({

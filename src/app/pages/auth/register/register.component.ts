@@ -17,7 +17,7 @@ export class RegisterComponent {
 
   register() {
     this.authService.register(this.user).subscribe(() => {
-      alert("Usuario registrado correctamente");
+      alert("Usuario registrado correctamente!!");
       this.router.navigate(['/login']);
     });
   }
