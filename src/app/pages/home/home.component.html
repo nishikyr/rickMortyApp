@@ -17,6 +17,7 @@
         <button *ngIf="!isFavorite(character)" class="btn btn-outline-danger mt-2" (click)="addToFavorites(character)">
           ❤️ Agregar a Favoritos
         </button>
+        <!-- Botón para quitar de favoritos -->
         <button *ngIf="isFavorite(character)" class="btn btn-danger mt-2" (click)="removeFromFavorites(character.id)">
           ❌ Quitar de Favoritos
         </button>

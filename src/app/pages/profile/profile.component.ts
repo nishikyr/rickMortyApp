@@ -17,13 +17,12 @@ export class ProfileComponent {
   constructor(private authService: AuthService, private router: Router) {}
 
   onFileSelected(event: any) {
-    this.selectedFile = event.target.files[0]; // ✅ Guardamos la imagen seleccionada
+    this.selectedFile = event.target.files[0];
   }
 
   updateProfile() {
-    console.log("📤 Datos antes de enviar:", this.user());
+    console.log(" Datos antes de enviar:", this.user());
 
-    // Si se seleccionó una imagen, subirla
     if (this.selectedFile) {
       this.authService.uploadAvatar(this.selectedFile);
     }
@@ -31,7 +30,7 @@ export class ProfileComponent {
     // Actualizar el nombre del usuario (sin perder el avatar si no se cambia)
     this.authService.updateProfile({
       name: this.user().name,
-      avatar: this.user().avatar 
+      avatar: this.user().avatar
     });
   }
 }

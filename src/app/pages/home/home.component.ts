@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RickAndMortyService } from '../../services/rick-and-morty.service';
-import { AuthService } from '../../services/auth.service'; // 👈 Agregamos AuthService'
+import { AuthService } from '../../services/auth.service';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
@@ -13,16 +13,16 @@ import { computed } from '@angular/core';
   templateUrl: './home.component.html',
 })
 export class HomeComponent implements OnInit {
-  characters: any[] = []; // Lista de personajes
+  characters: any[] = [];
   currentPage = 1;
-  totalPages = 42; // Número total de páginas en la API de Rick and Morty
+  totalPages = 42;
   searchQuery = '';
 
-  user = computed(() => this.authService.userSignal()); // 👈 Obtenemos el usuario autenticado
+  user = computed(() => this.authService.userSignal());
 
   constructor(
     private rickAndMortyService: RickAndMortyService,
-    private authService: AuthService // 👈 Agregamos AuthService
+    private authService: AuthService
   ) {}
 
   ngOnInit() {

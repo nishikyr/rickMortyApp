@@ -23,13 +23,11 @@ export class LoginComponent {
       tap(response => {
         this.authService.saveToken(response.token);
         console.log("✅ Login exitoso:", response);
-        alert("Inicio de sesión exitoso");
         this.router.navigate(['/']);
       })
     ).subscribe({
       error: error => {
         console.error("🔴 Error en login:", error);
-        alert(error.error?.error || "Error al iniciar sesión");
       }
     });
   }
