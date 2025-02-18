@@ -43,7 +43,7 @@ Un proyecto full-stack desarrollado con **Angular 19 (Frontend)** y **Node.js + 
 ✅ **Favoritos:** Los usuarios pueden marcar personajes como favoritos y ver su lista.  
 ✅ **Perfil del usuario:** Edición de nombre y subida de avatar con imágenes reales.  
 ✅ **Protección de Rutas:** Solo usuarios autenticados pueden acceder a favoritos y perfil.  
-✅ **Uso de `Signals` en Angular:** Evitamos el uso de `subscribe()` para mayor eficiencia.  
+✅ **Uso de `Signals` en Angular:** Para mayor eficiencia. 
 
 ---
 
